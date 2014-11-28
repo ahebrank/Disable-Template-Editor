@@ -88,6 +88,7 @@ class Disable_template_editor_ext
 	{
 		$str = '$(function() {' .
 			'$("#templateEditor input[name=\"save_template_file\"]").parent().hide();' .
+			'$("#templateEditor input[name=\"update_and_return\"]").parent().hide();' .
 			'$("#templateEditor #template_details > p").html("Read Only (Source Controlled) &ndash;" + $("#templateEditor #template_details > p").html());' .
 			'$("#templateEditor textarea[name=\"template_data\"]").attr("readonly", "readonly");' .
 			'$("#templateGroups .newTemplate").hide();' .
